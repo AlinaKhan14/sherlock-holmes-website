@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+body{
+    width: 100%; 
+    height: 100%;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+/* BORDER */
+
+.border{
+    border: 1px solid #999; 
+}
+
+.border-black{
+    border: 1.7px solid #505050E6; 
+}
+
+
+/* BACKGROUND */
+
+.background {
+    max-width: 1024px;
+    height: 100vh;
+    position: flex;
+    margin: 0 auto; /* Center the background */
+}
+
+.background-cell {
+    overflow: hidden; /* Ensure content doesn't overflow */
+    position: relative;
+    z-index: 0;
+    background-image: url(/website-images/18-7-4.png);
+    background-repeat: repeat-y;
+    background-size: 1024px auto;
+    max-width: 1024px;
+    background-position: top;
+    margin: 0 auto 0 auto;
+    background-color: #888;
+    min-height: 100%;
+
+}
+
+
+.background-cell-transparent{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    opacity: 0.5;
+    background-color:#E0E0E0;
+    z-index: 1;
+
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 2; /* Ensure they appear above both background layers */
+}
+
+
+/* .background-image{
+    background-color: red;
+    background-image: url('/website-images/The_Return_of_Sherlock_Holmes\,_edition_published_in_1905_by_McClure\,_Phillips_&_Co.\,_New_York..djvu.jpg');
+    background-size: cover;
+    z-index: 5;
+    position: relative;
+
+    background-image: url('/website-images/firstPage-9781139176231c11_p101-116_CBO.jpg');
+    background-size: 2048px auto;
+    background-position: ;
+} */
+
+
+.nav-bar{
+    height: 50px;
+    width: 85%;
+    background-color: #333333;
+    color: white;
+    font-size: 1.1rem;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+
+.nav-bar-left{
+    margin-left: 30px;
+    
+}
+
+.nav-bar-right{
+    margin-right: 20px;
+
+}
+
+.nav-bar-right a{
+    padding-right: 40px;
+}
+
+
+a:link{
+    color:white;
+}
+
+a:visited{
+    color: white;
+}
+
+/* TOP HEADER */
+
+.top-header{
+    height: 75px;
+    width: 85%;
+    background-color: #F0F0F0E6;
+
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+.top-header h1{
+    font-size: 1.9rem;
+    font-weight: 550;
+}
+
+
+
+
+/** BOTH COLUMNS**/
+.column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    height: 100vh; /* Full viewport height */
+    width: 100%;   /* Full width */
+
+
+}
+
+
+/** LEFT COLUMN **/
+
+
+.left-column{
+    height: 850px;
+    width: 83%;
+    margin-top: 20px;
+ 
+
+    margin: 0 auto; /* Horizontally center the div */
+    display: flex;
+    justify-content: center; /* Center text inside horizontally */
+    align-items: center; /* Center text inside vertically */
+    height: 100%;
+
+    position: relative;
+    top: 20px;
+    left: 35px;
+
+    
+}
+
+
+.left-column-text{
+    height: 100%;
+    width: 100%;
+    position: 20px;
+
+   
+    display: flex;
+    margin: 0 auto; /* Horizontally center the div */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    flex-wrap: wrap;
+
+}
+
+/* text-box */
+
+.left-textbox{
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    background-color: #F0F0F0E6;
+    font-size: 1.16rem;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+
+    bottom: 80px;
+}
+
+/* download wrapper */
+
+.download-wrapper{
+    background-color: #F0F0F0E6;
+    width: 100%;
+    bottom: 125px;
+    height: 655px;
+    position: relative;
+    align-items: center;
+    display: block;
+    font-size: 1.16rem;
+    bottom: 230px;
+
+
+}
+
+.download-text{
+
+    height: 80px;
+    width: 100%;
+    background-color: #F0F0F0E6;
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+
+}
+
+.download-link{
+    height: 90px;
+    width: 94%;
+    margin: 5px;
+    padding-left: 15px;
+    background-color: #303030E6;
+    color: #CCCCCC;
+ 
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+
+    
+}
+
+.download-link-top{
+    border-bottom: 1px solid #CCCCCC;
+
+    position: relative;
+    font-size: 1.7rem;
+    padding-bottom: 5px;
+
+}
+.download-link-bottom{
+    position: relative;
+    font-size: 1.2rem;
+    padding-top: 5px;
+
+
+}
+
+.download-link:hover{
+    background-color: #505050E6; /* Change background color slightly */
+    box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.8); /* Add glow effect */
+    
+    color: white;
+
+}
+
+.download-link:link{
+    color: #CCCCCC;
+    
+}
+
+.download-link:active{
+    color: #CCCCCC;
+    
+}
+
+.feedback-box{
+    
+    height: 120px;
+    width: 95%;
+    background-color: #F0F0F0E6;
+    font-size: 1.18rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    top: 20px;
+}
+
+.feedback-text{
+    padding: 15px;
+    width: 100%;
+
+}
+
+.feedback-text a {
+    text-decoration: none;
+    color: #333333;
+    text-decoration: underline;
+}
+
+.feedback-text a:hover {
+    color: red;
+}
+
+
+/** RIGHT COLUMN **/
+
+.right-column{
+    height: 650px;
+    width: 83%;
+    margin-top: 20px;
+    background-color: #E0E0E0;
+
+    margin: 0 auto; /* Horizontally center the div */
+   
+    justify-content: center; /* Center text inside horizontally */
+    align-items: center; /* Center text inside vertically */
+   
+    position: relative;
+    right: 35px;
+    top: 20px;
+    
+}
+
+/*  right column image  */ 
+
+.right-image-wrapper{
+    position: relative;
+    background-color: #E0E0E0;;
+    height: 100%;
+    width: 100%;
+}
+
+.right-image{
+    position: relative;
+    background-image: url(/website-images/03b-e1.gif);
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+
+    height:100%;
+    width: 100%;
+    background-position: center 0px;
+}
+
+/*  right column text  */ 
+
+.right-text{
+    height: 85px;
+    width: 100%; 
+    position: relative;
+    text-align: justify;
+    margin-left: 10px;
+
+    height: 100%;
+    width: 75%;
+    display: flex;
+    text-wrap: wrap;
+    justify-content: center;
+}
+
+.right-text p{
+    position: relative;
+    top: -20%;  /* Move the text 50% from the top */
+    left: 65%; /* Move the text 50% from the left */
+    transform: translate(-50%, -50%); /* P */
+}
+
+.right-text-2{
+    text-align: right;
+}
+
+
+
+
+
+
+.footer{
+    height: 45px;
+    width: 85%;
+    background-color: #333333;
+    color: #CCCCCC;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    left: 80px;
+ 
+}
+
+/* footer{
+    height: 40px;
+    background-color: rgb(46, 46, 46);
+    color: rgb(201, 201, 201);
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    width: 100%;
+    margin-right: 80px;
+
+} */
+
+.footer p{
+    position: relative;
+    right: 20px;
+
+}
